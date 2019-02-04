@@ -41,4 +41,4 @@ Saved time by planning and organizing before implementing code. Created wirefram
 Not underestimate how long certain features would be implemented. 
 
 ## Demo
-![](src/wireframe/demo.gif)
+![](src/wireframe/examples/demo.gif)
