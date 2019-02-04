@@ -7,3 +7,4 @@ export const SETDIFFICULTY = "SETDIFFICULTY";
 export const DISABLECARD = "DISABLECARD";
 export const GAMEOVER = "GAMEOVER";
 export const RESULTS = "RESULTS";
+export const GET_MARVEL = "GET_MARVEL";

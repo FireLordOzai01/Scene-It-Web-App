@@ -1,6 +1,6 @@
 import Data from './../data/users';
 import Cards from './../data/cards';
-import { CREATEUSER, LOGIN, ADDPTS, MINUSPTS, SETDIFFICULTY, SETCATEGORY, DISABLECARD, GAMEOVER, RESULTS } from './../constants/constants';
+import { CREATEUSER, LOGIN, ADDPTS, MINUSPTS, SETDIFFICULTY, SETCATEGORY, DISABLECARD, GAMEOVER, RESULTS,GET_MARVEL } from './../constants/constants';
 
 const initialState = {
     users: Data,
@@ -9,7 +9,8 @@ const initialState = {
     category: 0,
     difficulty: '',
     cards : Cards,
-    cardCounter: 0
+    cardCounter: 0,
+    marvelArr: []
 }
 
 const currentUser = (state, user) => {
@@ -58,10 +59,19 @@ const updateUsers = (state) => {
 }
 
 const rootReducer = (state = initialState, action) => { 
-    let updatedState;
     let updatedPts;
 
     switch (action.type) {
+        case GET_MARVEL:{
+            let updatedMarvel = action.data
+            console.log(updatedMarvel);
+
+            return{
+                ...state,
+                marvelArr: updatedMarvel
+            }
+        }
+
         case LOGIN: {
             return loginUser(state, action.email);
         } 

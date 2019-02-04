@@ -1,4 +1,4 @@
-import { CREATEUSER, LOGIN, ADDPTS, MINUSPTS, SETCATEGORY, SETDIFFICULTY, DISABLECARD, GAMEOVER, RESULTS } from './../constants/constants';
+import { CREATEUSER, LOGIN, ADDPTS, MINUSPTS, SETCATEGORY, SETDIFFICULTY, DISABLECARD, GAMEOVER, RESULTS, GET_MARVEL } from './../constants/constants';
 
 export const createUser = user => ({ type: CREATEUSER, user: user });
 export const onLogin = email => ({ type: LOGIN, email: email });
@@ -9,3 +9,4 @@ export const setDifficulty = value => ({ type: SETDIFFICULTY, value: value });
 export const disableCard = card => ({ type: DISABLECARD, card: card});
 export const gameOver = () => ({ type: GAMEOVER });
 export const getResults = () => ({ type: RESULTS });
+export const getMarvel = (arr) => ({type: GET_MARVEL, data: arr});

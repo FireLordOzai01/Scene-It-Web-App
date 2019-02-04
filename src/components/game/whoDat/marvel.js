@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { addPts, minusPts } from './../../../actions/actions';
+import { addPts, minusPts, getMarvel } from './../../../actions/actions';
 
 import loadingGif from './../../../assets/loading.gif';
 import { marvelkey } from './../../../constants/keys';
@@ -15,6 +15,7 @@ class Marvel extends Component {
         image: '',
         userAnswer: '',
         answer: '',
+        data: [],
         redirect: false
     }
 
@@ -32,10 +33,14 @@ class Marvel extends Component {
         }
     }
 
+    callMarvel = () => {
+        this.props.getMarvel(this.state.data);
+        console.log(this.state.data)
+    }
+
     fetchMarvelChar = () => {
-        axios.get(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${this.shuffleArray(parseInt(this.props.gameState.category))}&apikey=${marvelkey}`)
+        axios.get(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=wolverine&apikey=${marvelkey}`)
             .then(response => {
-                console.log(response.data.data.results[0])
                 this.setState({
                     image: response.data.data.results[0].thumbnail.path,
                     answer: response.data.data.results[0].name
@@ -100,6 +105,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
     addPts: points => { (dispatch(addPts(points))) },
     minusPts: points => { (dispatch(minusPts(points))) },
+    getMarvel: (arr) => { (dispatch(getMarvel(arr))) }
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Marvel);
