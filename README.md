@@ -45,3 +45,27 @@ Not underestimate how long certain features would be implemented.
 
 ## Login Page
 ![alt text](/src/wireframe/examples/loginScreen.png)
+
+## Sign Up Page
+![alt text](/src/wireframe/examples/signUpPage.png)
+
+## Score/Results Page
+![alt text](/src/wireframe/examples/resultsPage.png)
+
+## Instructions Page
+![alt text](/src/wireframe/examples/instructionsPage.png)
+
+## Game Page
+![alt text](/src/wireframe/examples/gamePage.png)
+
+## Trivia Page
+![alt text](/src/wireframe/examples/questionsPage.png)
+
+## Sign Up Page
+![alt text](/src/wireframe/examples/signUpPage.png)
+
+## Who Dat? Page
+![alt text](/src/wireframe/examples/whoDatPage.png)
+
+## Scene It Page
+![alt text](/src/wireframe/examples/movieQuestionPage.png)
