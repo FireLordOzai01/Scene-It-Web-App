@@ -61,9 +61,6 @@ Not underestimate how long certain features would be implemented.
 ## Trivia Page
 ![alt text](/src/wireframe/examples/questionPage.png)
 
-## Sign Up Page
-![alt text](/src/wireframe/examples/signUpPage.png)
-
 ## Who Dat? Page
 ![alt text](/src/wireframe/examples/whoDatPage.png)
 
