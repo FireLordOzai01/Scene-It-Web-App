@@ -20,7 +20,7 @@ As user plays they will earn or lose points based on card value. If a user's ans
 1. Using redux to manage state of cards. 
 2. Getting card to disable when clicked without affecting other cards. 
 3. When logging in, pushing user data into results page using redux as well as updating new scores.
-
+questionsPage.png
 ## Solution
 
 1. Create individual states for all 16 cards. Used redux to keep track of each card. If a card is clicked then the card is disabled. 
@@ -59,7 +59,7 @@ Not underestimate how long certain features would be implemented.
 ![alt text](/src/wireframe/examples/gamePage.png)
 
 ## Trivia Page
-![alt text](/src/wireframe/examples/questionsPage.png)
+![alt text](/src/wireframe/examples/questionPage.png)
 
 ## Sign Up Page
 ![alt text](/src/wireframe/examples/signUpPage.png)
